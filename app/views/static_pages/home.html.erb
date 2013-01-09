@@ -1,0 +1,131 @@
+<!--  <% if signed_in? %>
+  <div class="row">
+    <aside class="span4">
+      <section>
+        <%= render 'shared/user_info' %>
+      </section>
+      <section>
+        <%= render 'shared/stats' %>
+      </section>
+      <section>
+        <%= render 'shared/micropost_form' %>
+      </section>
+    </aside>
+    <div class="span8">
+      <h3>Micropost Feed</h3>
+      <%= render 'shared/feed' %>
+    </div>
+  </div>
+<% else %> -->
+
+<!-- Slider starts -->
+  
+    <div class="row">
+      <div class="span12">
+        <!-- Slider (Parallax Slider) -->
+          <div id="da-slider" class="da-slider">
+            <div class="da-slide">
+              <div class="da-blue">
+              <h3><span>Emerson said</span></h3>
+              <p>"Do not go where the path may lead; go instead where there is no path and leave a trail."</p>
+                <div class="da-img">
+                  <%= link_to image_tag("photos/wince_2.jpg", alt: "Wince graduation"), '#' %>
+                </div>
+              </div>
+            </div>
+            <div class="da-slide">
+              <div class="da-green">
+                <h3><span>Dr. Seuss said,</span></h3>
+                <p>You have brains in your head. You have feet in your shoes. You can steer yourself in any direction you choose. You're on your own. You are the guy who'll decide where to go.</p>
+                <div class="da-img">
+                  <%= link_to image_tag("photos/wince_3.jpg", alt: "Wince graduation"), '#' %>
+                </div>
+              </div>
+            </div>
+            <div class="da-slide">
+              <h3><span>Louis L'Amour said,</span></h3>
+              <p>Money can be lost or stolen, health and strength may fail, but what you have committed to your mind is yours forever.The best of all things is to learn.</p>
+              <a href="#" class="da-link">Read more</a>
+              <div class="da-img">
+                <%= link_to image_tag("photos/wince_1.jpg", alt: "Wince graduation"), '#' %>
+              </div>
+            </div>
+            <div class="da-slide">
+              <h3><span>Smesh said</span></h3>
+              <p>"Congragulations on what you have accomplished so far may you be granted the strength to go on."
+              </p>
+              
+              <div class="da-img">
+                <%= link_to image_tag("photos/wince_4.jpg", alt: "Wince graduation"), '#' %>
+              </div>
+            </div>
+            <nav class="da-arrows">
+              <span class="da-arrows-prev"></span>
+              <span class="da-arrows-next"></span>
+            </nav>
+          </div>
+      </div>
+    </div>
+
+<!-- Slider Ends -->
+<!-- Hero Unit -->
+
+<div class="row">
+  <div class="span6 ">
+    <ul class="thumbnails">
+      <li class="span6">
+        <div class="thumbnail">
+          <%= link_to image_tag("photos/wince_1.jpg", alt: "Wince graduation"), '#' %>          
+        </div>
+      </li>
+    </ul>
+    <ul class="thumbnails">
+      <li class="span3">
+        <div class="thumbnail">
+          <%= link_to image_tag("photos/wince_2.jpg", alt: "Wince graduation"), '#' %>          
+        </div>
+      </li>
+      <li class="span3">
+        <div class="thumbnail">
+          <%= link_to image_tag("photos/wince_6.jpg", alt: "Wince graduation"), '#' %>          
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <div class="span3 ">
+    <ul class="thumbnails">
+      <li class="span3">
+        <div class="thumbnail">
+          <%= link_to image_tag("photos/wince_7.jpg", alt: "Wince graduation"), '#' %>
+        </div>
+      </li>
+    </ul>
+    <ul class="thumbnails">
+      <li class="span3">
+        <div class="thumbnail">
+          <%= link_to image_tag("photos/wince_4.jpg", alt: "Wince graduation"), '#' %>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <div class="span3">
+    <ul class="thumbnails">
+      <li class="span3">
+        <div class="thumbnail">
+          <%= link_to image_tag("photos/wince_3.jpg", alt: "Wince graduation"), '#' %>
+        </div>
+      </li>
+    </ul>
+    <ul class="thumbnails">
+      <li class="span3">
+        <div class="thumbnail">
+          <%= link_to image_tag("photos/wince_8.jpg", alt: "Wince graduation"), '#' %>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<% end %>
